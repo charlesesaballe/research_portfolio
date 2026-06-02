@@ -843,7 +843,7 @@ details.detail[open] .det-icon::after { opacity: 0; transform: translate(-50%, -
 .pull, .prose p.pull {
   font-family: var(--serif);
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.85rem;
   line-height: 1.4;
   color: var(--cream);
   border-left: 2px solid var(--gold);
