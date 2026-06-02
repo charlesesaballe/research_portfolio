@@ -852,6 +852,10 @@ details.detail[open] .det-icon::after { opacity: 0; transform: translate(-50%, -
   font-style: italic;
   max-width: none;
 }
+/* let the quote break out wider than the reading column on desktop */
+@media (min-width: 900px) {
+  .prose p.pull { margin-right: -200px; }
+}
 
 /* next case nav */
 .cs-next {
