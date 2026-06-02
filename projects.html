@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Things I Build · Charlese Saballe</title>
+<meta name="description" content="Tools and frameworks Charlese Saballe builds alongside research — including the AI Research Study Planner, a planning companion for researchers studying AI products.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/styles.css?v=22">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">Charlese&nbsp;<span>Saballe</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="approach.html">Approach</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" style="padding-bottom:clamp(32px,5vh,56px);">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:30px;">Projects</p>
+    <h1 style="max-width:16ch;">Things I <em>build.</em></h1>
+    <p class="hero-intro">Alongside client and studio research, I build tools and frameworks, usually to satisfy my curiosity, or to make an idea concrete enough to test. Here's one I'm currently developing. More will land here as I build them.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <hr class="divider" style="margin-bottom:clamp(40px,6vh,72px);">
+
+    <div class="section-head" style="margin-bottom:34px;">
+      <p class="eyebrow">Currently developing</p>
+      <h2>AI Research Study Planner</h2>
+      <p class="lede">A planning tool for researchers studying AI products.</p>
+    </div>
+
+    <div class="cs-strengths">
+      <div class="sl">What it draws on</div>
+      <div class="tags"><span class="tag">AI research</span><span class="tag">Research methodology</span><span class="tag">Tool-building</span><span class="tag">Prototype</span></div>
+    </div>
+
+    <div class="btn-row" style="margin-top:34px;">
+      <a href="https://ai-research-planner.lovable.app" target="_blank" rel="noopener" class="btn btn-primary">Try the planner <span aria-hidden="true">→</span></a>
+      <span class="copy" style="text-transform:none;">ai-research-planner.lovable.app</span>
+    </div>
+
+    <div class="cs-meta">
+      <div class="m"><div class="mk">Status</div><div class="mv">Prototype</div></div>
+      <div class="m"><div class="mk">Mine</div><div class="mv">Concept, principles &amp; logic</div></div>
+      <div class="m"><div class="mk">Built with</div><div class="mv">AI tooling, for the language &amp; app</div></div>
+      <div class="m"><div class="mk">Type</div><div class="mv">A planning companion</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="prose">
+      <p class="pull">It acts like a senior researcher<br>reviewing your plan.</p>
+    </div>
+
+    <div style="margin-top:24px;">
+      <details class="detail" open>
+        <summary><span class="label"><span class="ix">01</span> Where it started</span><span class="det-icon" aria-hidden="true"></span></summary>
+        <div class="det-body">
+          <p>I kept noticing that researching AI products isn't quite like researching normal software, but most research planning still treats it the same way. A few things nagged at me: users blame themselves when the model fails, the same prompt gives two participants completely different experiences, think-aloud falls apart when people have no idea what to expect, and &ldquo;trust&rdquo; stops being something you want to maximise and becomes something you want users to calibrate. I'd been collecting these for a while, and eventually wanted to see if I could turn them into something a researcher could actually use.</p>
+        </div>
+      </details>
+      <details class="detail">
+        <summary><span class="label"><span class="ix">02</span> What it does</span><span class="det-icon" aria-hidden="true"></span></summary>
+        <div class="det-body">
+          <p>You describe your study, the AI product, your goal and questions, the stage, the methods you're weighing up, who you're researching, and it acts like a senior researcher reviewing your plan. It sharpens your research questions, re-prioritises your methods (and tells you when the ones you picked won't get you to your goal), flags the methodological tensions specific to your study, and suggests what to actually measure. The part I cared most about getting right was the critique: it tries to predict where your particular study will get harder than you expect, and what to do about it.</p>
+        </div>
+      </details>
+      <details class="detail">
+        <summary><span class="label"><span class="ix">03</span> What's under the hood</span><span class="det-icon" aria-hidden="true"></span></summary>
+        <div class="det-body">
+          <p>It runs on nine principles I developed for how AI research diverges from classic product research, mapped against eleven common study types (first-time usability tests, post-launch satisfaction, generative interviews, brand health, and so on). Each study type pulls the principles most likely to bite, with conditional logic for the ones that only matter when something like trust or usability testing is in play. A lot of it comes straight out of my own work, the mental-model principle, for instance, comes from watching users treat a conversational shopping assistant like a search box, because that was the only model they had for &ldquo;type into a box on a shopping site.&rdquo;</p>
+        </div>
+      </details>
+      <details class="detail">
+        <summary><span class="label"><span class="ix">04</span> On building it with AI</span><span class="det-icon" aria-hidden="true"></span></summary>
+        <div class="det-body">
+          <p>The ideas, the principles, the logic, the way it critiques a plan, are mine, from my own research experience. I used AI tooling to help polish the language and assemble the app itself. That feels right for a project like this: it's the kind of &ldquo;could I build this myself, quickly, with AI?&rdquo; experiment that the planner is, in a way, about.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="callout" style="margin-top:40px;">
+      <div class="ck">Fair warning</div>
+      <p>It's a prototype and a work in progress, a planning companion, not an oracle. The tensions it raises are things to design around, not reasons to avoid a study. I keep refining the principles as I use it and as AI research matures.</p>
+    </div>
+
+    <div class="prose" style="margin-top:40px; max-width:none;">
+      <p>If you try it and it says something interesting (or wrong), I'd be glad to hear about it.</p>
+    </div>
+
+    <div class="btn-row" style="margin-top:32px;">
+      <a href="https://ai-research-planner.lovable.app" target="_blank" rel="noopener" class="btn btn-primary">Try the planner <span aria-hidden="true">→</span></a>
+      <a href="contact.html" class="btn btn-ghost">Tell me what you think <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <a href="index.html" class="brand">Charlese&nbsp;<span>Saballe</span></a>
+    <nav class="foot-links">
+      <a href="about.html">About</a>
+      <a href="https://www.linkedin.com/in/charlesesaballe" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:charsaballe@gmail.com">Email</a>
+      <a href="assets/Charlese-Saballe-CV.pdf" target="_blank" rel="noopener">CV</a>
+    </nav>
+    <div class="copy">© 2026 Charlese Saballe</div>
+  </div>
+</footer>
+
+<script src="assets/site.js?v=7"></script>
+</body>
+</html>
