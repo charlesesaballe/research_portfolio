@@ -33,7 +33,7 @@
   <div class="wrap">
     <p class="eyebrow" style="margin-bottom:30px;">Projects</p>
     <h1 style="max-width:16ch;">Things I <em>build.</em></h1>
-    <p class="hero-intro">Alongside client and studio research, I build tools and frameworks, usually to satisfy my curiosity, or to make an idea concrete enough to test. Here's one I'm currently developing. More will land here as I build them.</p>
+    <p class="hero-intro">Alongside client and studio research, I build tools and frameworks, usually to satisfy my curiosity, or to make an idea concrete enough to test. More will land here as I build them.</p>
   </div>
 </section>
 
@@ -41,77 +41,151 @@
   <div class="wrap">
     <hr class="divider" style="margin-bottom:clamp(40px,6vh,72px);">
 
-    <div class="section-head" style="margin-bottom:34px;">
-      <p class="eyebrow">Currently developing</p>
-      <h2>Study Planner for AI Research</h2>
-      <p class="lede">A planning tool for researchers studying AI products.</p>
-    </div>
+    <details class="project" id="planner">
+      <summary class="project-summary">
+        <h2 class="project-name">Study Planner for AI Research <span class="project-status">Currently developing</span></h2>
+        <span class="det-icon" aria-hidden="true"></span>
+      </summary>
+      <div class="project-body">
+        <p class="lede">A planning tool for researchers studying AI products.</p>
 
-    <div class="cs-strengths">
-      <div class="sl">What it draws on</div>
-      <div class="tags"><span class="tag">AI research</span><span class="tag">Research methodology</span><span class="tag">Tool-building</span><span class="tag">Prototype</span></div>
-    </div>
+        <div class="cs-strengths">
+          <div class="sl">What it draws on</div>
+          <div class="tags"><span class="tag">AI research</span><span class="tag">Research methodology</span><span class="tag">Tool-building</span><span class="tag">Prototype</span></div>
+        </div>
 
-    <div class="btn-row" style="margin-top:34px;">
-      <a href="https://ai-research-planner.lovable.app" target="_blank" rel="noopener" class="btn btn-primary">Try the planner <span aria-hidden="true">→</span></a>
-      <span class="copy" style="text-transform:none;">ai-research-planner.lovable.app</span>
-    </div>
+        <div class="btn-row" style="margin-top:34px;">
+          <a href="https://ai-research-planner.lovable.app" target="_blank" rel="noopener" class="btn btn-primary">Try the planner <span aria-hidden="true">→</span></a>
+          <span class="copy" style="text-transform:none;">ai-research-planner.lovable.app</span>
+        </div>
 
-    <div class="cs-meta">
-      <div class="m"><div class="mk">Status</div><div class="mv">Prototype</div></div>
-      <div class="m"><div class="mk">Mine</div><div class="mv">Concept, principles &amp; logic</div></div>
-      <div class="m"><div class="mk">Built with</div><div class="mv">AI tooling, for the language &amp; app</div></div>
-      <div class="m"><div class="mk">Type</div><div class="mv">A planning companion</div></div>
-    </div>
+        <div class="cs-meta">
+          <div class="m"><div class="mk">Status</div><div class="mv">Prototype</div></div>
+          <div class="m"><div class="mk">Mine</div><div class="mv">Concept, principles &amp; logic</div></div>
+          <div class="m"><div class="mk">Built with</div><div class="mv">AI tooling, for the language &amp; app</div></div>
+          <div class="m"><div class="mk">Type</div><div class="mv">A planning companion</div></div>
+        </div>
+
+        <div class="prose" style="margin-top:48px;">
+          <p class="pull">It acts like a senior researcher<br>reviewing your plan.</p>
+        </div>
+
+        <div style="margin-top:24px;">
+          <details class="detail" open>
+            <summary><span class="label"><span class="ix">01</span> Where it started</span><span class="det-icon" aria-hidden="true"></span></summary>
+            <div class="det-body">
+              <p>I kept noticing that researching AI products isn't quite like researching normal software, but most research planning still treats it the same way. A few things nagged at me: users blame themselves when the model fails, the same prompt gives two participants completely different experiences, think-aloud falls apart when people have no idea what to expect, and &ldquo;trust&rdquo; stops being something you want to maximise and becomes something you want users to calibrate. I'd been collecting these for a while, and eventually wanted to see if I could turn them into something a researcher could actually use.</p>
+            </div>
+          </details>
+          <details class="detail">
+            <summary><span class="label"><span class="ix">02</span> What it does</span><span class="det-icon" aria-hidden="true"></span></summary>
+            <div class="det-body">
+              <p>You describe your study, the AI product, your goal and questions, the stage, the methods you're weighing up, who you're researching, and it acts like a senior researcher reviewing your plan. It sharpens your research questions, re-prioritises your methods (and tells you when the ones you picked won't get you to your goal), flags the methodological tensions specific to your study, and suggests what to actually measure. The part I cared most about getting right was the critique: it tries to predict where your particular study will get harder than you expect, and what to do about it.</p>
+            </div>
+          </details>
+          <details class="detail">
+            <summary><span class="label"><span class="ix">03</span> What's under the hood</span><span class="det-icon" aria-hidden="true"></span></summary>
+            <div class="det-body">
+              <p>It runs on nine principles I developed for how AI research diverges from classic product research, mapped against eleven common study types (first-time usability tests, post-launch satisfaction, generative interviews, brand health, and so on). Each study type pulls the principles most likely to bite, with conditional logic for the ones that only matter when something like trust or usability testing is in play. A lot of it comes straight out of my own work, the mental-model principle, for instance, comes from watching users treat a conversational shopping assistant like a search box, because that was the only model they had for &ldquo;type into a box on a shopping site.&rdquo;</p>
+            </div>
+          </details>
+          <details class="detail">
+            <summary><span class="label"><span class="ix">04</span> On building it with AI</span><span class="det-icon" aria-hidden="true"></span></summary>
+            <div class="det-body">
+              <p>The ideas, the principles, the logic, the way it critiques a plan, are mine, from my own research experience. I used AI tooling to help polish the language and assemble the app itself. That feels right for a project like this: it's the kind of &ldquo;could I build this myself, quickly, with AI?&rdquo; experiment that the planner is, in a way, about.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="callout" style="margin-top:40px;">
+          <div class="ck">Fair warning</div>
+          <p>It's a prototype and a work in progress, a planning companion, not an oracle. The tensions it raises are things to design around, not reasons to avoid a study. I keep refining the principles as I use it and as AI research matures.</p>
+        </div>
+
+        <div class="prose" style="margin-top:40px; max-width:none;">
+          <p>If you try it and it says something interesting (or wrong), I'd be glad to hear about it.</p>
+        </div>
+
+        <div class="btn-row" style="margin-top:32px;">
+          <a href="https://ai-research-planner.lovable.app" target="_blank" rel="noopener" class="btn btn-primary">Try the planner <span aria-hidden="true">→</span></a>
+          <a href="contact.html" class="btn btn-ghost">Tell me what you think <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </details>
   </div>
 </section>
 
 <section class="section" style="padding-top:0;">
   <div class="wrap">
-    <div class="prose">
-      <p class="pull">It acts like a senior researcher<br>reviewing your plan.</p>
-    </div>
+    <hr class="divider" style="margin-bottom:clamp(40px,6vh,72px);">
 
-    <div style="margin-top:24px;">
-      <details class="detail" open>
-        <summary><span class="label"><span class="ix">01</span> Where it started</span><span class="det-icon" aria-hidden="true"></span></summary>
-        <div class="det-body">
-          <p>I kept noticing that researching AI products isn't quite like researching normal software, but most research planning still treats it the same way. A few things nagged at me: users blame themselves when the model fails, the same prompt gives two participants completely different experiences, think-aloud falls apart when people have no idea what to expect, and &ldquo;trust&rdquo; stops being something you want to maximise and becomes something you want users to calibrate. I'd been collecting these for a while, and eventually wanted to see if I could turn them into something a researcher could actually use.</p>
-        </div>
-      </details>
-      <details class="detail">
-        <summary><span class="label"><span class="ix">02</span> What it does</span><span class="det-icon" aria-hidden="true"></span></summary>
-        <div class="det-body">
-          <p>You describe your study, the AI product, your goal and questions, the stage, the methods you're weighing up, who you're researching, and it acts like a senior researcher reviewing your plan. It sharpens your research questions, re-prioritises your methods (and tells you when the ones you picked won't get you to your goal), flags the methodological tensions specific to your study, and suggests what to actually measure. The part I cared most about getting right was the critique: it tries to predict where your particular study will get harder than you expect, and what to do about it.</p>
-        </div>
-      </details>
-      <details class="detail">
-        <summary><span class="label"><span class="ix">03</span> What's under the hood</span><span class="det-icon" aria-hidden="true"></span></summary>
-        <div class="det-body">
-          <p>It runs on nine principles I developed for how AI research diverges from classic product research, mapped against eleven common study types (first-time usability tests, post-launch satisfaction, generative interviews, brand health, and so on). Each study type pulls the principles most likely to bite, with conditional logic for the ones that only matter when something like trust or usability testing is in play. A lot of it comes straight out of my own work, the mental-model principle, for instance, comes from watching users treat a conversational shopping assistant like a search box, because that was the only model they had for &ldquo;type into a box on a shopping site.&rdquo;</p>
-        </div>
-      </details>
-      <details class="detail">
-        <summary><span class="label"><span class="ix">04</span> On building it with AI</span><span class="det-icon" aria-hidden="true"></span></summary>
-        <div class="det-body">
-          <p>The ideas, the principles, the logic, the way it critiques a plan, are mine, from my own research experience. I used AI tooling to help polish the language and assemble the app itself. That feels right for a project like this: it's the kind of &ldquo;could I build this myself, quickly, with AI?&rdquo; experiment that the planner is, in a way, about.</p>
-        </div>
-      </details>
-    </div>
+    <details class="project" id="lens">
+      <summary class="project-summary">
+        <h2 class="project-name">Inclusive Design Lens <span class="project-status">Framework</span></h2>
+        <span class="det-icon" aria-hidden="true"></span>
+      </summary>
+      <div class="project-body">
+        <p class="lede">A practical checklist for building DEI into the player experience.</p>
 
-    <div class="callout" style="margin-top:40px;">
-      <div class="ck">Fair warning</div>
-      <p>It's a prototype and a work in progress, a planning companion, not an oracle. The tensions it raises are things to design around, not reasons to avoid a study. I keep refining the principles as I use it and as AI research matures.</p>
-    </div>
+        <div class="cs-strengths">
+          <div class="sl">What it draws on</div>
+          <div class="tags"><span class="tag">Inclusive design</span><span class="tag">DEI</span><span class="tag">Frameworks</span><span class="tag">Player experience</span></div>
+        </div>
 
-    <div class="prose" style="margin-top:40px; max-width:none;">
-      <p>If you try it and it says something interesting (or wrong), I'd be glad to hear about it.</p>
-    </div>
+        <div class="cs-meta">
+          <div class="m"><div class="mk">Status</div><div class="mv">In use</div></div>
+          <div class="m"><div class="mk">Mine</div><div class="mv">Concept &amp; framework</div></div>
+          <div class="m"><div class="mk">Origin</div><div class="mv">Metacore DEI committee</div></div>
+          <div class="m"><div class="mk">Type</div><div class="mv">A checklist &amp; lens</div></div>
+        </div>
 
-    <div class="btn-row" style="margin-top:32px;">
-      <a href="https://ai-research-planner.lovable.app" target="_blank" rel="noopener" class="btn btn-primary">Try the planner <span aria-hidden="true">→</span></a>
-      <a href="contact.html" class="btn btn-ghost">Tell me what you think <span aria-hidden="true">→</span></a>
-    </div>
+        <figure class="cs-artifact" style="margin-top:48px;">
+          <img class="cs-artifact-img" style="max-height:760px;" src="assets/artifacts/inclusive-design-lens.png?v=1" alt="The Inclusive Design Lens in Notion, showing its working principle and tabbed structure: Full Version, Quick-use Version, Worked example, and Overview, with the full version's three sections (who are we designing for, how does the experience work, how do we check ourselves) and red flags.">
+          <div class="cs-artifact-ph">Screenshot of the Inclusive Design Lens<br>goes here</div>
+          <figcaption>The lens in Notion: a full version, a quick-use version, and a worked example.</figcaption>
+        </figure>
+
+        <div class="prose" style="margin-top:48px;">
+          <p class="pull">Who an experience works for, who it leaves out,<br>and who has to work harder for the same experience.</p>
+        </div>
+
+        <div style="margin-top:24px;">
+          <details class="detail" open>
+            <summary><span class="label"><span class="ix">01</span> Why I made it</span><span class="det-icon" aria-hidden="true"></span></summary>
+            <div class="det-body">
+              <p>This came out of my work on Metacore's DEI committee. It's something I took on because I care about it. Inclusive design tends to live in good intentions and vague principles which makes it easy to nod along to and hard to actually use. I wanted something a team could pick up in a real decision, a feature, a story beat, an event, and use to ask better questions early before assumptions harden into something shipped.</p>
+            </div>
+          </details>
+          <details class="detail">
+            <summary><span class="label"><span class="ix">02</span> What it is</span><span class="det-icon" aria-hidden="true"></span></summary>
+            <div class="det-body">
+              <p>A checklist built around a simple idea: inclusive design is about being honest and intentional about who an experience works for, who it might leave out, and who has to work harder to get the same experience. It's organised around three questions: who are we designing for, how does the experience actually work, and how do we check ourselves – each opening into more specific prompts about assumptions, friction, accessibility, representation, language, and evidence. It comes with a set of <em>red flags</em>, the phrases that should make a team pause like &ldquo;<em>it's for everyone</em>&rdquo; when only one audience was considered, and a worked example showing the lens applied to a typical feature decision.</p>
+            </div>
+          </details>
+          <details class="detail">
+            <summary><span class="label"><span class="ix">03</span> How it's meant to be used</span><span class="det-icon" aria-hidden="true"></span></summary>
+            <div class="det-body">
+              <p>Early. And by anyone. There's a full version for deeper work and a three-question quick version for faster conversations – because a lens only helps if people actually reach for it. It's designed to make trade-offs visible: who a choice rewards, who it quietly excludes, and what the team should watch for.</p>
+            </div>
+          </details>
+          <details class="detail">
+            <summary><span class="label"><span class="ix">04</span> Where it fits</span><span class="det-icon" aria-hidden="true"></span></summary>
+            <div class="det-body">
+              <p>It's the practical companion to one of my research principles: ask who it works for and who it leaves out. It grew out of something I care about well beyond any single role: designing for the people a product usually overlooks.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="prose" style="margin-top:40px; max-width:none;">
+          <p>If you're curious to see the full framework, just ask.</p>
+        </div>
+
+        <div class="btn-row" style="margin-top:32px;">
+          <a href="contact.html" class="btn btn-primary">Get in touch <span aria-hidden="true">→</span></a>
+          <a href="approach.html" class="btn btn-ghost">The principle behind it <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </details>
   </div>
 </section>
 
@@ -130,6 +204,6 @@
   </div>
 </footer>
 
-<script src="assets/site.js?v=7"></script>
+<script src="assets/site.js?v=8"></script>
 </body>
 </html>
