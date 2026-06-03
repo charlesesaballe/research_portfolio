@@ -391,7 +391,6 @@ a { color: inherit; text-decoration: none; }
 .work-item .go .arw { transition: transform 0.3s var(--ease); }
 .work-item:hover .go .arw { transform: translateX(4px); }
 
-.work-item.soon { }
 .work-item.soon .go { color: var(--cream-faint); }
 .badge-soon {
   font-family: var(--mono);
@@ -824,7 +823,6 @@ details.detail[open] .det-icon::after { opacity: 0; transform: translate(-50%, -
 .det-body li strong { color: var(--cream); font-weight: 600; }
 .det-body .ph { margin: 24px 0; }
 .det-body .stat-row { display: flex; flex-wrap: wrap; gap: 28px; margin: 22px 0 8px; padding: 22px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.det-body .stat { }
 .det-body .stat .n { font-family: var(--serif); font-size: 1.9rem; color: var(--gold-bright); line-height: 1; }
 .det-body .stat .l { font-size: 13.5px; color: var(--cream-faint); margin-top: 6px; max-width: 22ch; }
 
