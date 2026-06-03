@@ -450,7 +450,7 @@ a { color: inherit; text-decoration: none; }
 .process-step:last-child { border-bottom: 1px solid var(--line); }
 .process-step .sn {
   font-family: var(--mono);
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 500;
   color: var(--gold);
   padding-top: 4px;
@@ -458,7 +458,7 @@ a { color: inherit; text-decoration: none; }
 .process-step h4 {
   font-family: var(--serif);
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.55rem;
   margin: 0 0 10px;
   letter-spacing: -0.01em;
 }
